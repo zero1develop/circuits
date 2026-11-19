@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Powers of Tau downloads and incomplete transfers
+ptau/
+*.ptau
+*.ptau.part
+
+# Temporary witness and proof-generation files
+build/
+!build/
+!build/**/
+!build/**/*.r1cs
+!build/**/*.sym
+!build/**/*.wasm
+!build/**/*.js
+*.wtns
+
+# Generated benchmark and fuzzing output
+benchmarks/benchmark-results-*.json
+benchmarks/constraint-analysis-*.json
+fuzz-output/
+
+# Test and compiler output
+coverage/
+*.tsbuildinfo
+*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
